@@ -23,8 +23,8 @@ def process_excel():
         list = df[attributeName]
         for i in range(len(list)):
 
-            list[i] = list[i].replace(" ", "").upper()
-            set_element = set(list[i])
+            selectedString = list[i].replace(" ", "").upper()
+            set_element = set(selectedString)
             if targetString == set_element :
 
                 list[i] = newString
